@@ -1,0 +1,14 @@
+.hero-container {
+  padding: 16px;
+  height: 100vh;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 174px;
+  height: 383px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -80px;
+}
