@@ -1,0 +1,42 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: $padding-spaicing-20 123px;
+  gap: $spacing-20;
+
+  .header-logo {
+    font-weight: $font-weight-700;
+    font-size: $font-size-24;
+    line-height: $line-height-32;
+    letter-spacing: -0.333333px;
+    color: $white;
+  }
+
+  .header-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: $spacing-24;
+  }
+
+  .header-pattern-rings {
+    position: absolute;
+    top: 124px;
+    left: -342px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .header-pattern-circle {
+    position: absolute;
+    top: 254px;
+    right: -65px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}
