@@ -1,0 +1,35 @@
+.experience-container {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  padding: 40px 16px;
+  width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  .experience-labels-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .experience-title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #ffffff;
+    }
+
+    .experience-description {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #d9d9d9;
+    }
+  }
+}
