@@ -1,0 +1,32 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
+.project-container {
+  padding: 80px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  .project-top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 71px;
+
+    .project-top-title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -1.13636px;
+      color: #ffffff;
+    }
+  }
+
+  .project-bottom-container {
+    display: grid;
+    gap: 40px;
+
+  }
+}

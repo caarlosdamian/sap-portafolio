@@ -1,5 +1,6 @@
 import React from "react";
 import AvatarImg from "../../assets/images/image-profile-mobile.webp";
+import { Button } from "../../components/button/Button";
 import "./Hero.scss";
 
 export const Hero = () => {
@@ -13,7 +14,7 @@ export const Hero = () => {
         Based in the UK, I’m a front-end developer passionate about building
         accessible web apps that users love.
       </p>
-      <button className="hero-button">CONTACT ME</button>
+      <Button label="CONTACT ME" />
     </div>
   );
 };

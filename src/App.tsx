@@ -1,7 +1,7 @@
 import React from "react";
 import Rings from "./assets/images/pattern-rings.svg";
 import Circle from "./assets/images/pattern-circle.svg";
-import { Contact, Experience, Footer, Header, Hero } from "./sections";
+import { Contact, Experience, Footer, Header, Hero, Projects } from "./sections";
 import "./index.scss";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <Experience />
+      <Projects/>
       <Contact />
       <Footer />
     </div>

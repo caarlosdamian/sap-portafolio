@@ -1,0 +1,78 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
+
+    .project-bottom-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+  
+        .overflow-wrapper {
+          background: #000000;
+          mix-blend-mode: normal;
+          opacity: 0.75;
+          width: 540px;
+          height: 400px;
+          display: none;
+  
+          @include devices(desktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 48px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:hover {
+              z-index: 3;
+            }
+          }
+        }
+        .project-img {
+          width: 345px;
+          height: 253px;
+          z-index: 2;
+          &:hover {
+            z-index: -1;
+          }
+  
+          @include devices(desktop) {
+            width: 540px;
+            height: 400px;
+          }
+        }
+        .project-title {
+          margin-top: 12px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          color: #ffffff;
+        }
+        .project-tool-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 18px;
+          .tool-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #d9d9d9;
+          }
+        }
+  
+        .project-button-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+  
+          @include devices(desktop) {
+            display: none;
+          }
+        }
+      }
