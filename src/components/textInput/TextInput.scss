@@ -1,0 +1,22 @@
+.input-container {
+  padding: 17px 24px;
+  outline: none;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.222222px;
+  color: #ffffff;
+  min-width: 343px;
+  border-bottom: 1px solid #ffffff;
+  z-index: 2;
+
+  &:focus {
+    border-bottom: 1px solid #4ee1a0;
+  }
+
+  &.text-area {
+    padding: 17px 24px 81px;
+  }
+}
