@@ -1,6 +1,14 @@
 @import "../../tokens/index.scss";
 @import "../../tokens/mixings.scss";
 
+
+.input-wrapper{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
 .input-container {
   padding: 17px 24px;
   outline: none;
@@ -24,4 +32,17 @@
   &.text-area {
     padding: 17px 24px 81px;
   }
+
+  &.error {
+    border-bottom: 1px solid #ff6f5b;
+  }
+}
+
+.error-label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.166667px;
+  color: #ff6f5b;
+  text-align: end;
 }

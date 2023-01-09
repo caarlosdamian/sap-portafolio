@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/button/Button";
 import { TextInput } from "../../components/textInput/TextInput";
 import Rings from "../../assets/images/pattern-rings.svg";
 import "./Contact.scss";
 
 export const Contact = () => {
+  const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [error, setError] = useState(false);
+
+  const onFormChange = (e: any) => {
+    setContactForm({
+      ...contactForm,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const onSubmit = () => {
+    if (contactForm.email.match(mailformat)) {
+      setError(false);
+    } else {
+      setError(true);
+    }
+  };
+
   return (
     <div className="contact-container">
       <img
@@ -20,10 +43,24 @@ export const Contact = () => {
         </span>
       </div>
       <div className="contact-right-wrapper">
-        <TextInput placeholder="NAME" />
-        <TextInput placeholder="EMAIL" />
-        <TextInput type="text-area" placeholder="MESSAGE" />
-        <Button label="SEND MESSAGE" />
+        <TextInput
+          placeholder="NAME"
+          name="name"
+          onChange={(e) => onFormChange(e)}
+        />
+        <TextInput
+          placeholder="EMAIL"
+          name="email"
+          error={error}
+          onChange={(e) => onFormChange(e)}
+        />
+        <TextInput
+          type="text-area"
+          placeholder="MESSAGE"
+          name="message"
+          onChange={(e) => onFormChange(e)}
+        />
+        <Button label="SEND MESSAGE" onClick={onSubmit} />
       </div>
     </div>
   );

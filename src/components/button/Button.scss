@@ -1,15 +1,20 @@
 .button {
-    border: none;
-    padding: 10px;
-    font-family: "Space Grotesk";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 2.28571px;
-    color: #ffffff;
-    background: none;
-    border-bottom: 2px solid #4ee1a0;
-    cursor: pointer;
-    text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.28571px;
+  color: #ffffff;
+  background: none;
+  border-bottom: 2px solid #4ee1a0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
+
+  &:hover {
+    color: #4ee1a0;
   }
+}

@@ -1,10 +1,18 @@
 import React from "react";
 import "./Button.scss";
 
-interface ButtonI {
+interface ButtonI
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   label: string;
 }
 
-export const Button = ({ label }: ButtonI) => {
-  return <button className="button">{label}</button>;
+export const Button = ({ label, ...props }: ButtonI) => {
+  return (
+    <button {...props} className="button">
+      {label}
+    </button>
+  );
 };
