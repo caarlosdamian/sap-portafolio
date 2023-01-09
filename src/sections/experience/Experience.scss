@@ -1,3 +1,6 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
 .experience-container {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
@@ -11,11 +14,18 @@
   gap: 24px;
   position: relative;
 
+  @include devices(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 708px;
+  }
+
   .header-pattern-rings-experience {
     position: absolute;
     bottom: -65px;
     right: -344px;
   }
+
   .experience-labels-container {
     display: flex;
     align-items: center;

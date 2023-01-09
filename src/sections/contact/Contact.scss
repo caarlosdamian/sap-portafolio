@@ -1,3 +1,6 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
 .contact-container {
   display: flex;
   align-items: center;
@@ -7,8 +10,9 @@
   gap: 50px;
   background: #24242473;
   position: relative;
+  width: 100%;
 
-  .header-pattern-rings-btm{
+  .header-pattern-rings-btm {
     top: 436px;
     position: absolute;
     left: -343px;
@@ -20,6 +24,10 @@
     flex-direction: column;
     gap: 20px;
 
+    @include devices(tablet) {
+      max-width: 445px;
+    }
+
     .contact-left-title {
       font-weight: 700;
       font-size: 40px;
@@ -27,6 +35,13 @@
       text-align: center;
       letter-spacing: -1.13636px;
       color: #ffffff;
+
+      @include devices(tablet) {
+        font-size: 72px;
+        line-height: 72px;
+        text-align: center;
+        letter-spacing: -2.04545px;
+      }
     }
     .contect-information {
       font-weight: 500;
@@ -41,6 +56,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include devices(tablet) {
+    max-width: 445px;
+    }
 
     button {
       align-self: flex-end;

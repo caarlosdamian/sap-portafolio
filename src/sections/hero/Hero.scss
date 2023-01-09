@@ -1,3 +1,6 @@
+@import "../../tokens/index.scss";
+@import "../../tokens/mixings.scss";
+
 .hero-container {
   padding: 200px 30px 30px;
   height: 680px;
@@ -6,6 +9,13 @@
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+
+  @include devices(tablet) {
+    align-items: flex-start;
+    padding: 200px 30px 30px;
+    padding: 90px 32px 60px;
+    width: 100%;
+  }
 
   .hero-title {
     text-align: center;
@@ -17,6 +27,14 @@
     text-align: center;
     letter-spacing: -1.13636px;
     color: #ffffff;
+
+    @include devices(tablet) {
+      max-width: 445px;
+      text-align: start;
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -2.04545px;
+    }
 
     .hero-name {
       border-bottom: 4px solid #4ee1a0;
@@ -31,9 +49,14 @@
     line-height: 26px;
     text-align: center;
     color: #d9d9d9;
+
+    @include devices(tablet) {
+      max-width: 445px;
+      text-align: start;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
-
-
 }
 
 .hero-img {
@@ -44,4 +67,20 @@
   top: 0;
   left: 50%;
   margin-left: -80px;
+  @include devices(tablet) {
+    display: none;
+  }
+}
+
+.hero-img-tablet {
+  display: none;
+  @include devices(tablet) {
+    width: 322px;
+    height: 600px;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }

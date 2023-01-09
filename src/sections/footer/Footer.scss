@@ -10,25 +10,49 @@
   gap: $spacing-20;
   background: #24242473;
 
+  @include devices(tablet) {
+    width: 100%;
+    border-width: 706px;
+  }
+
   .top-line {
     border-top: 1px solid white;
     height: 1px;
     width: 345px;
     margin-bottom: 39px;
+
+    @include devices(tablet) {
+      margin-bottom: 30px;
+      width: 706px;
+    }
   }
 
-  .footer-logo {
-    font-weight: $font-weight-700;
-    font-size: $font-size-24;
-    line-height: $line-height-32;
-    letter-spacing: -0.333333px;
-    color: $white;
-  }
-
-  .footer-social-container {
+  .footer-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: $spacing-24;
+    justify-content: center;
+
+    @include devices(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      border-width: 706px;
+    }
+
+    .footer-logo {
+      font-weight: $font-weight-700;
+      font-size: $font-size-24;
+      line-height: $line-height-32;
+      letter-spacing: -0.333333px;
+      color: $white;
+    }
+
+    .footer-social-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: $spacing-24;
+    }
   }
 }

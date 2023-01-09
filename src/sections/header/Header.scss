@@ -9,6 +9,13 @@
   padding: $padding-spaicing-20 123px;
   gap: $spacing-20;
 
+  @include devices(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+  }
+
   .header-logo {
     font-weight: $font-weight-700;
     font-size: $font-size-24;

@@ -9,12 +9,14 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
       <hr className="top-line" />
-      <h1 className="footer-logo">adamkeyes</h1>
-      <div className="footer-social-container">
-        <img src={Github} alt="" className="footer-social-icon" />
-        <img src={FrontMentor} alt="" className="footer-social-icon" />
-        <img src={Linkedin} alt="" className="footer-social-icon" />
-        <img src={Twitter} alt="" className="footer-social-icon" />
+      <div className="footer-wrapper">
+        <h1 className="footer-logo">adamkeyes</h1>
+        <div className="footer-social-container">
+          <img src={Github} alt="" className="footer-social-icon" />
+          <img src={FrontMentor} alt="" className="footer-social-icon" />
+          <img src={Linkedin} alt="" className="footer-social-icon" />
+          <img src={Twitter} alt="" className="footer-social-icon" />
+        </div>
       </div>
     </footer>
   );
