@@ -12,10 +12,22 @@
   position: relative;
   width: 100%;
 
+  @include devices(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 84px 165px;
+  }
+
   .header-pattern-rings-btm {
     top: 436px;
     position: absolute;
     left: -343px;
+
+    @include devices(desktop) {
+      left: -205px;
+      top: 327px;
+    }
   }
   .contact-left-wrapper {
     display: flex;
@@ -26,6 +38,10 @@
 
     @include devices(tablet) {
       max-width: 445px;
+    }
+
+    @include devices(desktop) {
+      align-items: flex-start;
     }
 
     .contact-left-title {
@@ -42,6 +58,12 @@
         text-align: center;
         letter-spacing: -2.04545px;
       }
+
+      @include devices(desktop) {
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+      }
     }
     .contect-information {
       font-weight: 500;
@@ -49,6 +71,12 @@
       line-height: 26px;
       text-align: center;
       color: #d9d9d9;
+
+      @include devices(desktop) {
+        text-align: start;
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -58,7 +86,7 @@
     gap: 32px;
 
     @include devices(tablet) {
-    max-width: 445px;
+      max-width: 445px;
     }
 
     button {

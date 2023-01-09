@@ -17,6 +17,11 @@
     width: 100%;
   }
 
+  @include devices(desktop) {
+    padding: 127px 165px;
+    gap: 40px;
+  }
+
   .hero-title {
     text-align: center;
     font-family: "Space Grotesk";
@@ -36,6 +41,13 @@
       letter-spacing: -2.04545px;
     }
 
+    @include devices(desktop) {
+      max-width: 706px;
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+    }
+
     .hero-name {
       border-bottom: 4px solid #4ee1a0;
     }
@@ -53,6 +65,11 @@
     @include devices(tablet) {
       max-width: 445px;
       text-align: start;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @include devices(desktop) {
       font-size: 18px;
       line-height: 28px;
     }
@@ -82,5 +99,12 @@
     top: 0;
     right: 0;
     z-index: -1;
+  }
+
+  @include devices(desktop) {
+    right: 150px;
+    width: 445px;
+    height: 720px;
+    object-fit: cover;
   }
 }

@@ -15,6 +15,10 @@
     width: 100%;
     padding: 20px 30px;
   }
+  
+  @include devices(desktop) {
+    padding: 39px 165px;
+  }
 
   .header-logo {
     font-weight: $font-weight-700;

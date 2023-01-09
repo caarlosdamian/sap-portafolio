@@ -20,6 +20,13 @@
     width: 708px;
   }
 
+  @include devices(desktop) {
+    width: 1110px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 327px;
+    border-bottom: none;
+  }
+
   .header-pattern-rings-experience {
     position: absolute;
     bottom: -65px;
@@ -32,6 +39,11 @@
     justify-content: center;
     flex-direction: column;
 
+    @include devices(desktop) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
     .experience-title {
       font-weight: 700;
       font-size: 32px;
@@ -39,6 +51,12 @@
       text-align: center;
       letter-spacing: -1px;
       color: #ffffff;
+
+      @include devices(desktop) {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+      }
     }
 
     .experience-description {
@@ -47,6 +65,11 @@
       line-height: 26px;
       text-align: center;
       color: #d9d9d9;
+
+      @include devices(desktop) {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 }

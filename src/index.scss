@@ -1,3 +1,6 @@
+@import "./tokens/index.scss";
+@import "./tokens/mixings.scss";
+
 body {
   background: #151515;
   .app-container {
@@ -17,6 +20,9 @@ body {
       left: -342px;
       mix-blend-mode: normal;
       opacity: 0.25;
+      @include devices(desktop) {
+        left: -100px;
+      }
     }
     .header-pattern-circle {
       position: absolute;
@@ -24,6 +30,12 @@ body {
       right: -65px;
       mix-blend-mode: normal;
       opacity: 0.25;
+
+      @include devices(desktop) {
+        right: 545px;
+        opacity: 1;
+        top: 521px;
+      }
     }
   }
 }

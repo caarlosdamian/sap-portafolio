@@ -11,6 +11,11 @@
   @include devices(tablet) {
     padding: 100px 30px;
   }
+
+  @include devices(desktop) {
+    gap: 80px;
+  }
+
   .project-top-container {
     display: flex;
     justify-content: space-between;
@@ -24,6 +29,12 @@
       line-height: 40px;
       letter-spacing: -1.13636px;
       color: #ffffff;
+
+      @include devices(desktop) {
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -2.5px;
+      }
     }
   }
   .project-bottom-container {

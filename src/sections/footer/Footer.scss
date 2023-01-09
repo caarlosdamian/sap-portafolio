@@ -25,6 +25,10 @@
       margin-bottom: 30px;
       width: 706px;
     }
+    @include devices(desktop) {
+      margin-bottom: 47px;
+      width: 1110px;
+    }
   }
 
   .footer-wrapper {
@@ -32,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: $spacing-20;
 
     @include devices(tablet) {
       flex-direction: row;
