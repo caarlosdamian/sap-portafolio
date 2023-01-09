@@ -9,6 +9,13 @@
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+  position: relative;
+
+  .header-pattern-rings-experience {
+    position: absolute;
+    bottom: -65px;
+    right: -344px;
+  }
   .experience-labels-container {
     display: flex;
     align-items: center;
