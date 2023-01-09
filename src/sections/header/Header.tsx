@@ -7,7 +7,7 @@ import "./Header.scss";
 
 export const Header = () => {
   return (
-    <div className="header-container">
+    <header className="header-container">
       <h1 className="header-logo">adamkeyes</h1>
       <div className="header-social-container">
         <img src={Github} alt="" className="header-social-icon" />
@@ -15,6 +15,6 @@ export const Header = () => {
         <img src={Linkedin} alt="" className="header-social-icon" />
         <img src={Twitter} alt="" className="header-social-icon" />
       </div>
-    </div>
+    </header>
   );
 };
